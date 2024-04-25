@@ -71,6 +71,69 @@ class ThreeAddressGenerator:
         self.temp_count += 1
         return temp
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     def postfix_to_three_address(self, postfix):
         stack = []
         three_address_code = []
@@ -84,6 +147,69 @@ class ThreeAddressGenerator:
                 three_address_code.append(f"{temp} = {op1} {token} {op2}")
                 stack.append(temp)
         return three_address_code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     def infix_to_postfix(self, infix):
         precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '(': 0}
@@ -108,6 +234,67 @@ class ThreeAddressGenerator:
         return postfix
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
     generator = ThreeAddressGenerator()
 
@@ -121,6 +308,53 @@ if __name__ == "__main__":
     print("\nThree-address code for the expression:")
     for code in three_address_code:
         print(code)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # output
